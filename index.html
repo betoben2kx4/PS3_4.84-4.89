@@ -11,13 +11,17 @@
 			color: rgb(255, 255, 255);
 			font-style: italic;
 		}
-		.div0{
-			border: none;
-			box-shadow: 0px 0px 20px rgb(53, 54, 58);
+		.divm {
+			border: solid 1px rgb(53, 54, 58);
 			margin-left: 5%;
 			margin-right: 5%;
+			padding: 10px;
+			overflow: auto;
+		}
+		.div0{
+			border: none;
+			box-shadow: 0px 0px 30px rgb(255, 0, 100);
 			height: 80vh;
-			border-radius: 5px;
 		}
 		.btn {
 			text-align: center;
@@ -25,98 +29,35 @@
 			margin-bottom: 1%;
 			margin-left: 1%;
 			margin-right: 1%;
-			width: 300px;
+			width: 250px;
 			padding: 20px;
 			border: solid 1px rgb(53, 54, 58);
-			border-radius: 20px;
 			background: none;
 			font-weight: bold;
 			cursor: pointer;
 			color: rgb(255, 255, 255);
 			font-style: italic;
 		}
-		.btn1 {
-			text-align: center;
-			margin-top: 1%;
-			margin-bottom: 1%;
-			margin-left: 1%;
-			margin-right: 1%;
-			width: 300px;
-			padding: 20px;
-			border: solid 1px rgb(53, 54, 58);
-			border-radius: 20px;
-			background: none;
-			font-weight: bold;
-			cursor: pointer;
-			color: rgb(255, 255, 255);
-			font-style: italic;
+		.btn:hover {
+			background-color: rgb(53, 54, 58);
 		}
-		.btn2 {
-			text-align: center;
-			margin-top: 1%;
-			margin-bottom: 1%;
-			margin-left: 1%;
-			margin-right: 1%;
-			width: 200px;
-			padding: 15px;
-			border: solid 1px rgb(53, 54, 58);
-			border-radius: 15px;
-			background: none;
-			color: rgb(0, 100, 255);
-			font-weight: bold;
-			cursor: pointer;
-			font-style: italic;
+		.credit {
+			margin-top: 10%;
 		}
 	</style>
 </head>
 <body>
 	<h1>PS3xploit (Unofficial)</h1>
-	<div class="div0">
-		<a href="hen_installer/"><button class="btn">HEN Installer</button></a>
-		<a href="alternate/"><button class="btn">Alternate HEN Installer</button></a>
-		<a href="autohen/"><button class="btn">Auto HEN Installer</button></a><br>
-		<button class="btn1" onclick="showbtn()">Online HEN Enabler (HEN Installed Required)</button><br>
-		<a href="enablehen/flash.html"><button style="display: none;" class="btn2" id="hiddenbtn">Enable HEN_Flash</button></a>
-		<a href="enablehen/usb000.html"><button style="display: none;" class="btn2" id="hiddenbtn1">Enable HEN_USB000</button></a>
-		<a href="enablehen/usb001.html"><button style="display: none;" class="btn2" id="hiddenbtn2">Enable HEN_USB001</button></a>
-		<a href="enablehen/usb006.html"><button style="display: none;" class="btn2" id="hiddenbtn3">Enable HEN_USB0006</button></a><br><br>
-		<span>PS3xploit (Unofficial) Created by <a href="https://bishalqx980.github.io/bishalqx980" style="color: rgb(0, 100, 255);">@bishalqx980</a></span><br><br>
-		<span><span style="color: rgb(255, 255, 0);">Credit's:</span> PS3xploitTeam & PSX-place</span>
+	<div class="divm">
+		<div class="div0">
+			<a href="hen_installer/"><button class="btn">HEN Installer</button></a>
+			<a href="alternate/"><button class="btn">Alternate HEN Installer</button></a>
+			<p style="color: rgb(255, 0, 0);">HFW 4.84-4.89 Supported</p>
+			<div class="credit">
+				<span>PS3xploit (Unofficial) Created by <a href="https://bishalqx980.github.io/bishalqx980" style="color: rgb(0, 100, 255);">@bishalqx980</a></span><br><br>
+				<span><span style="color: rgb(255, 255, 0);">Credit's:</span> PS3xploitTeam & PSX-place</span>
+			</div>
+		</div>
 	</div>
-	<script>
-		function showbtn() {
-			var show = document.getElementById('hiddenbtn');
-			if (show.style.display == "") {
-				show.style.display = "none"
-			}
-			else {
-				show.style.display = ""
-			}
-			
-			var show = document.getElementById('hiddenbtn1');
-			if (show.style.display == "") {
-				show.style.display = "none"
-			}
-			else {
-				show.style.display = ""
-			}
-			
-			var show = document.getElementById('hiddenbtn2');
-			if (show.style.display == "") {
-				show.style.display = "none"
-			}
-			else {
-				show.style.display = ""
-			}
-			
-			var show = document.getElementById('hiddenbtn3');
-			if (show.style.display == "") {
-				show.style.display = "none"
-			}
-			else {
-				show.style.display = ""
-			}
-		}
-	</script>
 </body>
 </html>
